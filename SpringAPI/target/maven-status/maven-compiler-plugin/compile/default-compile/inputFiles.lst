@@ -1,0 +1,4 @@
+/var/lib/jenkins/workspace/testpipeline1/SpringAPI/src/main/java/org/example/springapi/SpringApiApplication.java
+/var/lib/jenkins/workspace/testpipeline1/SpringAPI/src/main/java/org/example/springapi/api/controller/UserController.java
+/var/lib/jenkins/workspace/testpipeline1/SpringAPI/src/main/java/org/example/springapi/api/model/User.java
+/var/lib/jenkins/workspace/testpipeline1/SpringAPI/src/main/java/org/example/springapi/service/UserService.java
