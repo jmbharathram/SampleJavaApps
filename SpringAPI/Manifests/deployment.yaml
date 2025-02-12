@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: springapi
+  name: springapi-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: springapi
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: springapi
+    spec:
+      containers:
+        - image: jmbharathram/springapi:38
+          name: springapi
+          resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: springapi-service
+  labels:
+    app: springapi-service
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30010
+  selector:
+    app: springapi
