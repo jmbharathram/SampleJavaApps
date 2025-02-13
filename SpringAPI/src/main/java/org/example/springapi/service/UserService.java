@@ -21,6 +21,7 @@ public class UserService {
         User user3 = new User(3,"Lars", 45, "lars@mail.com");
         User user4 = new User(4,"Ben", 32, "ben@mail.com");
         User user5 = new User(5,"Eva", 59, "eva@mail.com");
+        User user6 = new User(6,"Ram", 40, "ram@mail.com");
 
         userList.addAll(Arrays.asList(user1,user2,user3,user4,user5));
     }
